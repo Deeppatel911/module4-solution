@@ -1,0 +1,19 @@
+<div>
+	<h1>Menu Category:{{itemsCtrl.categoryName}}</h1>
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th>Short Name</th>
+				<th>Name</th>
+				<th>Description</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="categoriesItem in itemsCtrl.items">
+				<td>{{categoriesItem.short_name}}</td>
+				<td>{{categoriesItem.name}}</td>
+				<td>{{categoriesItem.description}}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

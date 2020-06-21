@@ -1,0 +1,7 @@
+<div>
+	<h1>Menu Categories</h1>
+	<div ng-repeat="item in categoriesCtrl.categories">
+		<a ui-sref="items({categoryShortName:item.short_name})"> {{item.short_name}} - {{item.name}}</a>
+	</div>
+</div>
+<ui-view></ui-view>
